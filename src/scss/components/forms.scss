@@ -1,0 +1,28 @@
+form {
+  display: flex;
+  flex-direction: column;
+    &a {
+      flex: 0 0 1;
+    }
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    fill: $color-text-secondary;
+    padding: 11px 8px;
+    margin-left: 18px;
+    transition: 0.3s;
+    &.user {
+        background: url('/images/icons/userIcon.svg') no-repeat;
+    }
+    &.password {
+        background: url('/images/icons/passwordIcon.svg') no-repeat;
+    }
+}
+

@@ -8,13 +8,23 @@
 </head>
 <body>
   <div class="container">
-      <section>
+      <section class="login">
           <div class="section-header">
-            <h3>Welcome back</h3>
+            <div class="image-wrapper">
+                <img src="/images/login.png" alt="Welcome back">
+            </div>
+            <h2 class="m-0 mt">Welcome back!</h2>
           </div>
-          <form action="">
-              <input type="email" name="mail" id="mail">
-              <input type="password" name="password" id="password">
+          <form class="mt" action="">
+              <div class="input-wrapper">
+                <input type="email" name="mail" placeholder="example@email.com" id="mail">
+                <i class="user icon" aria-hidden="true"></i>
+            </div>
+              <div class="input-wrapper mt">
+                <input type="password" name="password" id="password">
+                <i class="password icon" aria-hidden="true"></i>
+              </div>
+              <a href="#">forgot password?</a>
               <button type="submit">Log In</button>
           </form>
       </section>

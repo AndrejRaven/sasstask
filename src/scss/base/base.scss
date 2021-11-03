@@ -1,0 +1,25 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+    
+  body {
+    margin: 0;
+    font-family: $font-text;
+    line-height: 1.7;
+    font-weight: $font-normal;
+    color: $color-text-main;
+    overflow-x: hidden;
+  }
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid $color-text-secondary;
+    border-radius: $radius;
+    padding-left: 6ch;
+}
