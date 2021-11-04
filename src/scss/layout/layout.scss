@@ -1,4 +1,10 @@
-
+nav {
+    position: absolute;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin: 6ch;
+}
 .container {
     max-width: 1450px;
     margin: 0 auto;
@@ -9,7 +15,7 @@
 
 section {
     max-width: 400px;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 .section-header {

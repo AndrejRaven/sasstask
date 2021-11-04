@@ -1,28 +1,41 @@
 form {
   display: flex;
   flex-direction: column;
-    &a {
-      flex: 0 0 1;
+  margin-bottom: 3rem;
+    a {
+        margin-left: auto;
     }
 }
 
 .input-wrapper {
     position: relative;
+    input {
+        width: 100%;
+        min-height: 50px;
+        border: 1px solid $color-text-secondary;
+        border-radius: $radius;
+        padding-left: 5ch;
+        &:focus {
+            color: $color-main;
+            border: 1px solid $color-main;
+            & + .icon {
+                color: $color-main;  
+            }
+          }
+    }
+
+    .icon {
+        position: absolute;
+        left: 0;
+        top: 6px;
+        color: $color-text-secondary;
+        padding: 11px 8px;
+        margin-left: 10px;
+        transition: 0.3s;
+    }
 }
 
-.icon {
-    position: absolute;
-    left: 0;
-    top: 15px;
-    fill: $color-text-secondary;
-    padding: 11px 8px;
-    margin-left: 18px;
-    transition: 0.3s;
-    &.user {
-        background: url('/images/icons/userIcon.svg') no-repeat;
-    }
-    &.password {
-        background: url('/images/icons/passwordIcon.svg') no-repeat;
-    }
-}
+
+
+
 

@@ -1,0 +1,23 @@
+.social-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+        font-size: 0.875rem;
+        color: $color-text-secondary;
+    }
+    .social-login_buttons {
+        width: 100%;
+        display: flex;
+        button {
+          margin: 0 14px;
+          text-transform: none;
+          &.face-login {
+              background: #385C8E;
+          }
+          &.google-login {
+              background: #F14436;
+          }
+        }
+    }
+}

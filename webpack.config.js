@@ -55,10 +55,6 @@ module.exports = {
         {
           from: "src/images/",
           to: "images/"
-        },
-        {
-          from: "src/fonts/",
-          to: "fonts/"
         }
       ]
     })
@@ -66,6 +62,6 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
-    port: 8000
+    port: 3000
   }
 };

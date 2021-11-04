@@ -7,8 +7,13 @@
     <title>Sass task</title>
 </head>
 <body>
+  <nav>
+      <a href="#">Login</a>
+      <a href="#">Forgot password</a>
+      <a href="#">Pro account</a>
+  </nav>
   <div class="container">
-      <section class="login">
+      <section id="login">
           <div class="section-header">
             <div class="image-wrapper">
                 <img src="/images/login.png" alt="Welcome back">
@@ -18,16 +23,42 @@
           <form class="mt" action="">
               <div class="input-wrapper">
                 <input type="email" name="mail" placeholder="example@email.com" id="mail">
-                <i class="user icon" aria-hidden="true"></i>
+                <i class="far fa-user icon"></i>
             </div>
               <div class="input-wrapper mt">
                 <input type="password" name="password" id="password">
-                <i class="password icon" aria-hidden="true"></i>
+                <i class="fas fa-lock icon"></i>
               </div>
               <a href="#">forgot password?</a>
-              <button type="submit">Log In</button>
+              <button class="mt-2" type="submit">Log In</button>
+              <div class="social-login mt">
+                  <span>Or connect with social</span>
+                  <div class="social-login_buttons mt">
+                      <button class="face-login" type="button">Facebook</button>
+                      <button class="google-login" type="button">Google</button>
+                  </div>
+              </div>
+          </form>
+      </section>
+      <section id="forgot-password">
+          <div class="section-header">
+            <div class="image-wrapper">
+                <img src="/images/forgotpass.png" alt="Forgot password">
+            </div>
+            <h2 class="m-0 mt">Forgot password</h2>
+          </div>
+          <form class="mt" action="">
+              <button class="mt-2" type="submit">Log In</button>
+              <div class="social-login mt">
+                  <span>Or connect with social</span>
+                  <div class="social-login_buttons mt">
+                      <button class="face-login" type="button">Facebook</button>
+                      <button class="google-login" type="button">Google</button>
+                  </div>
+              </div>
           </form>
       </section>
     </div>
+    <script src="https://kit.fontawesome.com/4b549ea673.js" crossorigin="anonymous"></script>
 </body>
 </html>

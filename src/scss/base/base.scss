@@ -16,10 +16,28 @@
     justify-content: center;
 }
 
-input {
-    width: 100%;
-    min-height: 50px;
-    border: 1px solid $color-text-secondary;
-    border-radius: $radius;
-    padding-left: 6ch;
+a {
+  color: $color-main;
+  text-decoration: none;
+}
+
+
+button {
+  width: 100%;
+  min-height: 50px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: $radius;
+  background-color: $color-main;
+  color: $color-text-light;
+  cursor: pointer;
+}
+
+.active {
+  display: box;
+}
+
+.hidden {
+  display: none;
 }
