@@ -1,1 +1,5 @@
-Start 3.03.21 17-50
+# Welcome!
+## To install this app 
+### npm install
+## To start 
+### npm run dev
