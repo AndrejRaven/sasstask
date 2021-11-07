@@ -32,12 +32,21 @@ button {
   background-color: $color-main;
   color: $color-text-light;
   cursor: pointer;
+  transition: $transition;
+  &:hover {
+    filter: brightness(120%);
+  }
+  &.btn_action {
+    background: $color-action;
+  }
 }
 
-.active {
-  display: box;
-}
-
-.hidden {
-  display: none;
+#pages {
+  > * {
+    display: none;
+  }
+  
+  > .active {
+    display: block;
+  }
 }

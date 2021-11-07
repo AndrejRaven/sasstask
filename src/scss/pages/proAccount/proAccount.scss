@@ -1,0 +1,50 @@
+.pro-account {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    button {
+        background: #BF1541;
+    }
+}
+
+.pro-account_input {
+    width: 50%;
+    .link-wrapper {
+        text-align: right;
+        margin-left: auto;
+        a {
+            color: $color-text-secondary;
+          }
+    }
+}
+
+.link-wrapper {
+    min-height: 30px;
+}
+
+.tooltip {
+    display: inline;
+    position: relative;
+  }
+  .tooltip:hover:after{
+    display: flex;
+    justify-content: center;
+    background: #444;
+    opacity: 0.9;
+    border-radius: 8px;
+    color: #fff;
+    content: attr(title);
+    margin: -80px auto 0;
+    font-size: 14px;
+    width: 220px;
+    text-align: center;
+  }
+  .tooltip:hover:before{
+    border: solid;
+    border-color: #444 transparent;
+    border-width: 12px 6px 0 6px;
+    content: "";
+    left: 45%;
+    bottom: 20px;
+    position: absolute;
+  }

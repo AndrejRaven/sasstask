@@ -8,11 +8,12 @@
 </head>
 <body>
   <nav>
-      <a href="#">Login</a>
-      <a href="#">Forgot password</a>
-      <a href="#">Pro account</a>
+      <a href="#login">Login</a>
+      <a href="#forgot-password">Forgot password</a>
+      <a href="#pro-account">Pro account</a>
   </nav>
-  <div class="container">
+  <div class="container" id="pages">
+      <!-- login -->
       <section id="login">
           <div class="section-header">
             <div class="image-wrapper">
@@ -29,7 +30,7 @@
                 <input type="password" name="password" id="password">
                 <i class="fas fa-lock icon"></i>
               </div>
-              <a href="#">forgot password?</a>
+              <a href="#forgot-password">forgot password?</a>
               <button class="mt-2" type="submit">Log In</button>
               <div class="social-login mt">
                   <span>Or connect with social</span>
@@ -40,6 +41,7 @@
               </div>
           </form>
       </section>
+      <!-- password restore -->
       <section id="forgot-password">
           <div class="section-header">
             <div class="image-wrapper">
@@ -48,16 +50,45 @@
             <h2 class="m-0 mt">Forgot password</h2>
           </div>
           <form class="mt" action="">
-              <button class="mt-2" type="submit">Log In</button>
-              <div class="social-login mt">
-                  <span>Or connect with social</span>
-                  <div class="social-login_buttons mt">
-                      <button class="face-login" type="button">Facebook</button>
-                      <button class="google-login" type="button">Google</button>
-                  </div>
-              </div>
+            <div class="input-wrapper">
+                <input type="email" name="mail" placeholder="example@email.com" id="mailForReset">
+                <i class="far fa-user icon"></i>
+            </div>
+              <button class="mt-2" type="submit">Reset</button>
           </form>
+          <div class="footer">
+              <span>Already have an account <a href="#login">Login here</a></span>
+          </div>
       </section>
+      <!-- pro account -->
+      <section id="pro-account">
+        <div class="section-header">
+          <div class="image-wrapper">
+              <img src="/images/proacc.png" alt="Forgot password">
+          </div>
+          <h2 class="m-0 mt">Get pro account</h2>
+        </div>
+        <form class="mt" action="">
+          <div class="input-wrapper">
+              <input type="number" name="cardNumber" placeholder="Card Number" id="cardNumber">
+              <div class="pro-account mt">
+                <div class="pro-account_input">
+                    <input type="number" name="expirianceDate" placeholder="MM/YY" id="expirianceDate">
+                </div>
+                <div class="pro-account_input">
+                    <input type="number" name="cVV" placeholder="CVV" id="cVV">
+                    <div class="link-wrapper">
+                        <a href="#" title="The CVV code is located on the back of your credit/debit card." class="tooltip">Whats this?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pro-account">
+                <input type="number" name="cardNumber" placeholder="ZIP/Postal code" id="zipCode">
+            </div>
+          </div>
+            <button class="mt btn_action" type="submit">Upgrade</button>
+        </form>
+    </section>
     </div>
     <script src="https://kit.fontawesome.com/4b549ea673.js" crossorigin="anonymous"></script>
 </body>

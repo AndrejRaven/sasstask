@@ -4,6 +4,16 @@ nav {
     display: flex;
     flex-direction: column;
     margin: 6ch;
+    @include media("max", "md") {
+        width: 100%;
+        flex-direction: row;
+        margin: 0;
+        justify-content: space-evenly;
+      }
+}
+
+span {
+    color: $color-text-secondary;
 }
 .container {
     max-width: 1450px;
@@ -15,9 +25,18 @@ nav {
 
 section {
     max-width: 400px;
-    margin-top: 10vh;
+    margin-top: 15vh;
+    @include media("max", "md") {
+        width: 90%;
+        margin-top: 10vh;
+      }
 }
 
 .section-header {
     text-align: center;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 200px;
 }

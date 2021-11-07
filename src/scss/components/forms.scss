@@ -18,10 +18,29 @@ form {
         &:focus {
             color: $color-main;
             border: 1px solid $color-main;
+            outline: none;
             & + .icon {
                 color: $color-main;  
             }
           }
+        &:focus::placeholder {
+           color: $color-main;
+        }
+    }
+
+    input[type='number'] {
+        -moz-appearance:textfield;
+        padding-left: 3ch;
+    }
+    
+    
+    
+    /* Webkit browsers like Safari and Chrome */
+    
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
     }
 
     .icon {
